@@ -22,7 +22,7 @@ if (
 if (shell.mkdir(project).code)
     throw new Error(`${project} is exist. Please use another name`);
 
-shell.cp('-rf', path.resolve(__dirname, 'packageify/*'), project);
+shell.cp('-rf', path.resolve(__dirname, 'packageify/.'), project);
 
 function resolve(...args) {
     return path.resolve(cwd, ...args);
