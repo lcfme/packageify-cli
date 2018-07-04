@@ -1,6 +1,6 @@
 {
   "name": "packageify2-cli",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "",
   "main": "error.js",
   "bin": "bin.js",
