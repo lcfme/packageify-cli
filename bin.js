@@ -9,16 +9,6 @@ if (!process.argv[2] || /[^\w]/.test(process.argv[2]))
     );
 var project = resolve(process.argv[2]);
 
-if (
-    shell.exec(
-        'cd packageify && git fetch --all && git reset --hard origin/master'
-    ).code
-) {
-    throw new Error(
-        'There is an error. Please use npm install -g packageify2-cli to solve it.'
-    );
-}
-
 if (shell.mkdir(project).code)
     throw new Error(`${project} is exist. Please use another name`);
 
