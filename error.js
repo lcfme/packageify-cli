@@ -1,0 +1,1 @@
+throw new Error('Don\'t require me. I');
